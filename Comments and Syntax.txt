@@ -1,0 +1,28 @@
+Comments are messages put into the code that tell the reader what portions of the code do.
+They are always preceded by a "//".  This tells the program to ignore whatever follows until the comment ends.
+For example:
+
+	public class Move : MonoBehaviour {
+	
+	// This is an example of a comment.  Update is called once per frame
+	void Update () {
+		
+		// This is another example.  The object will move to the left when the Left Arrow key is pressed down.
+		if(Input.GetKey(KeyCode.LeftArrow)) {
+			gameObject.transform.Translate(-.2f,0,0);
+		}
+	}
+	
+	//All of these comments will be read but ignored by the program.
+}
+
+
+Syntax is basically the grammar of a coding language.  If the syntax of a block of code is incorrect, an error message
+will appear and the code will not be executed.  Proper uses of syntax in C# include:
+
+	Ending all commands with a semi-colon.  Ex:  gameObject.transform.Translate(-.2f,0,0);
+	Having an opening and closing parenthesis.  Ex: if (***)
+	Always having an opening and closing squiggly bracket.  Ex: void Update () {
+								     }
+	Comments preceded by a two slashes.  Ex: //This is a comment.
+	Capitalizing each individual word in multi-word commands since spaces and underscores are not recognized.  Ex: GetKey, KeyCode, LeftArrow, etc.
